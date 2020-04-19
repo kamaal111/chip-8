@@ -1,0 +1,1165 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		601EE82E244C73E9005C0456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE82D244C73E9005C0456 /* AppDelegate.swift */; };
+		601EE830244C73E9005C0456 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE82F244C73E9005C0456 /* GameViewController.swift */; };
+		601EE833244C73E9005C0456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE831244C73E9005C0456 /* Main.storyboard */; };
+		601EE836244C73E9005C0456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE834244C73E9005C0456 /* LaunchScreen.storyboard */; };
+		601EE83B244C73E9005C0456 /* chip-8.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 601EE83A244C73E9005C0456 /* chip-8.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		601EE841244C73E9005C0456 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE83F244C73E9005C0456 /* Interface.storyboard */; };
+		601EE848244C73E9005C0456 /* chip-8 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 601EE847244C73E9005C0456 /* chip-8 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		601EE84D244C73E9005C0456 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE84C244C73E9005C0456 /* InterfaceController.swift */; };
+		601EE84F244C73E9005C0456 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE84E244C73E9005C0456 /* ExtensionDelegate.swift */; };
+		601EE858244C73E9005C0456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE857244C73E9005C0456 /* AppDelegate.swift */; };
+		601EE85A244C73E9005C0456 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE859244C73E9005C0456 /* GameViewController.swift */; };
+		601EE85D244C73E9005C0456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE85B244C73E9005C0456 /* Main.storyboard */; };
+		601EE860244C73E9005C0456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE85E244C73E9005C0456 /* LaunchScreen.storyboard */; };
+		601EE869244C73E9005C0456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE868244C73E9005C0456 /* AppDelegate.swift */; };
+		601EE86B244C73E9005C0456 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE86A244C73E9005C0456 /* GameViewController.swift */; };
+		601EE86E244C73E9005C0456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE86C244C73E9005C0456 /* Main.storyboard */; };
+		601EE873244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
+		601EE874244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
+		601EE875244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
+		601EE876244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
+		601EE877244C73E9005C0456 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE824244C73E8005C0456 /* GameScene.swift */; };
+		601EE878244C73E9005C0456 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE824244C73E8005C0456 /* GameScene.swift */; };
+		601EE879244C73E9005C0456 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE824244C73E8005C0456 /* GameScene.swift */; };
+		601EE87A244C73E9005C0456 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE824244C73E8005C0456 /* GameScene.swift */; };
+		601EE87B244C73E9005C0456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601EE825244C73E9005C0456 /* Assets.xcassets */; };
+		601EE87C244C73E9005C0456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601EE825244C73E9005C0456 /* Assets.xcassets */; };
+		601EE87D244C73E9005C0456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601EE825244C73E9005C0456 /* Assets.xcassets */; };
+		601EE87E244C73E9005C0456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601EE825244C73E9005C0456 /* Assets.xcassets */; };
+		601EE8B5244C7C26005C0456 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
+		60DB4771244C8CFC00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
+		60DB4772244C8CFD00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
+		60DB4773244C8CFE00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
+		60DB478C244C956D00FFFE43 /* WIPEOFF in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4775244C956D00FFFE43 /* WIPEOFF */; };
+		60DB478D244C956D00FFFE43 /* WIPEOFF in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4775244C956D00FFFE43 /* WIPEOFF */; };
+		60DB478E244C956D00FFFE43 /* WIPEOFF in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4775244C956D00FFFE43 /* WIPEOFF */; };
+		60DB478F244C956D00FFFE43 /* WIPEOFF in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4775244C956D00FFFE43 /* WIPEOFF */; };
+		60DB4790244C956D00FFFE43 /* MISSILE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4776244C956D00FFFE43 /* MISSILE */; };
+		60DB4791244C956D00FFFE43 /* MISSILE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4776244C956D00FFFE43 /* MISSILE */; };
+		60DB4792244C956D00FFFE43 /* MISSILE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4776244C956D00FFFE43 /* MISSILE */; };
+		60DB4793244C956D00FFFE43 /* MISSILE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4776244C956D00FFFE43 /* MISSILE */; };
+		60DB4794244C956D00FFFE43 /* VERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4777244C956D00FFFE43 /* VERS */; };
+		60DB4795244C956D00FFFE43 /* VERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4777244C956D00FFFE43 /* VERS */; };
+		60DB4796244C956D00FFFE43 /* VERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4777244C956D00FFFE43 /* VERS */; };
+		60DB4797244C956D00FFFE43 /* VERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4777244C956D00FFFE43 /* VERS */; };
+		60DB4798244C956D00FFFE43 /* TANK in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4778244C956D00FFFE43 /* TANK */; };
+		60DB4799244C956D00FFFE43 /* TANK in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4778244C956D00FFFE43 /* TANK */; };
+		60DB479A244C956D00FFFE43 /* TANK in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4778244C956D00FFFE43 /* TANK */; };
+		60DB479B244C956D00FFFE43 /* TANK in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4778244C956D00FFFE43 /* TANK */; };
+		60DB479C244C956D00FFFE43 /* BLINKY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4779244C956D00FFFE43 /* BLINKY */; };
+		60DB479D244C956D00FFFE43 /* BLINKY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4779244C956D00FFFE43 /* BLINKY */; };
+		60DB479E244C956D00FFFE43 /* BLINKY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4779244C956D00FFFE43 /* BLINKY */; };
+		60DB479F244C956D00FFFE43 /* BLINKY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4779244C956D00FFFE43 /* BLINKY */; };
+		60DB47A0244C956D00FFFE43 /* CONNECT4 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477A244C956D00FFFE43 /* CONNECT4 */; };
+		60DB47A1244C956D00FFFE43 /* CONNECT4 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477A244C956D00FFFE43 /* CONNECT4 */; };
+		60DB47A2244C956D00FFFE43 /* CONNECT4 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477A244C956D00FFFE43 /* CONNECT4 */; };
+		60DB47A3244C956D00FFFE43 /* CONNECT4 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477A244C956D00FFFE43 /* CONNECT4 */; };
+		60DB47A4244C956D00FFFE43 /* TICTAC in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477B244C956D00FFFE43 /* TICTAC */; };
+		60DB47A5244C956D00FFFE43 /* TICTAC in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477B244C956D00FFFE43 /* TICTAC */; };
+		60DB47A6244C956D00FFFE43 /* TICTAC in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477B244C956D00FFFE43 /* TICTAC */; };
+		60DB47A7244C956D00FFFE43 /* TICTAC in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477B244C956D00FFFE43 /* TICTAC */; };
+		60DB47A8244C956D00FFFE43 /* MERLIN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477C244C956D00FFFE43 /* MERLIN */; };
+		60DB47A9244C956D00FFFE43 /* MERLIN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477C244C956D00FFFE43 /* MERLIN */; };
+		60DB47AA244C956D00FFFE43 /* MERLIN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477C244C956D00FFFE43 /* MERLIN */; };
+		60DB47AB244C956D00FFFE43 /* MERLIN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477C244C956D00FFFE43 /* MERLIN */; };
+		60DB47AC244C956D00FFFE43 /* HIDDEN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477D244C956D00FFFE43 /* HIDDEN */; };
+		60DB47AD244C956D00FFFE43 /* HIDDEN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477D244C956D00FFFE43 /* HIDDEN */; };
+		60DB47AE244C956D00FFFE43 /* HIDDEN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477D244C956D00FFFE43 /* HIDDEN */; };
+		60DB47AF244C956D00FFFE43 /* HIDDEN in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477D244C956D00FFFE43 /* HIDDEN */; };
+		60DB47B0244C956D00FFFE43 /* PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477E244C956D00FFFE43 /* PUZZLE */; };
+		60DB47B1244C956D00FFFE43 /* PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477E244C956D00FFFE43 /* PUZZLE */; };
+		60DB47B2244C956D00FFFE43 /* PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477E244C956D00FFFE43 /* PUZZLE */; };
+		60DB47B3244C956D00FFFE43 /* PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB477E244C956D00FFFE43 /* PUZZLE */; };
+		60DB47B8244C956D00FFFE43 /* KALEID in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4780244C956D00FFFE43 /* KALEID */; };
+		60DB47B9244C956D00FFFE43 /* KALEID in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4780244C956D00FFFE43 /* KALEID */; };
+		60DB47BA244C956D00FFFE43 /* KALEID in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4780244C956D00FFFE43 /* KALEID */; };
+		60DB47BB244C956D00FFFE43 /* KALEID in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4780244C956D00FFFE43 /* KALEID */; };
+		60DB47BC244C956D00FFFE43 /* TETRIS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4781244C956D00FFFE43 /* TETRIS */; };
+		60DB47BD244C956D00FFFE43 /* TETRIS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4781244C956D00FFFE43 /* TETRIS */; };
+		60DB47BE244C956D00FFFE43 /* TETRIS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4781244C956D00FFFE43 /* TETRIS */; };
+		60DB47BF244C956D00FFFE43 /* TETRIS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4781244C956D00FFFE43 /* TETRIS */; };
+		60DB47C0244C956D00FFFE43 /* BLITZ in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4782244C956D00FFFE43 /* BLITZ */; };
+		60DB47C1244C956D00FFFE43 /* BLITZ in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4782244C956D00FFFE43 /* BLITZ */; };
+		60DB47C2244C956D00FFFE43 /* BLITZ in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4782244C956D00FFFE43 /* BLITZ */; };
+		60DB47C3244C956D00FFFE43 /* BLITZ in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4782244C956D00FFFE43 /* BLITZ */; };
+		60DB47C4244C956D00FFFE43 /* UFO in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4783244C956D00FFFE43 /* UFO */; };
+		60DB47C5244C956D00FFFE43 /* UFO in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4783244C956D00FFFE43 /* UFO */; };
+		60DB47C6244C956D00FFFE43 /* UFO in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4783244C956D00FFFE43 /* UFO */; };
+		60DB47C7244C956D00FFFE43 /* UFO in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4783244C956D00FFFE43 /* UFO */; };
+		60DB47C8244C956D00FFFE43 /* VBRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4784244C956D00FFFE43 /* VBRIX */; };
+		60DB47C9244C956D00FFFE43 /* VBRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4784244C956D00FFFE43 /* VBRIX */; };
+		60DB47CA244C956D00FFFE43 /* VBRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4784244C956D00FFFE43 /* VBRIX */; };
+		60DB47CB244C956D00FFFE43 /* VBRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4784244C956D00FFFE43 /* VBRIX */; };
+		60DB47CC244C956D00FFFE43 /* SYZYGY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4785244C956D00FFFE43 /* SYZYGY */; };
+		60DB47CD244C956D00FFFE43 /* SYZYGY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4785244C956D00FFFE43 /* SYZYGY */; };
+		60DB47CE244C956D00FFFE43 /* SYZYGY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4785244C956D00FFFE43 /* SYZYGY */; };
+		60DB47CF244C956D00FFFE43 /* SYZYGY in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4785244C956D00FFFE43 /* SYZYGY */; };
+		60DB47D0244C956D00FFFE43 /* MAZE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4786244C956D00FFFE43 /* MAZE */; };
+		60DB47D1244C956D00FFFE43 /* MAZE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4786244C956D00FFFE43 /* MAZE */; };
+		60DB47D2244C956D00FFFE43 /* MAZE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4786244C956D00FFFE43 /* MAZE */; };
+		60DB47D3244C956D00FFFE43 /* MAZE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4786244C956D00FFFE43 /* MAZE */; };
+		60DB47D4244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
+		60DB47D5244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
+		60DB47D6244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
+		60DB47D7244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
+		60DB47D8244C956D00FFFE43 /* PONG2 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4788244C956D00FFFE43 /* PONG2 */; };
+		60DB47D9244C956D00FFFE43 /* PONG2 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4788244C956D00FFFE43 /* PONG2 */; };
+		60DB47DA244C956D00FFFE43 /* PONG2 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4788244C956D00FFFE43 /* PONG2 */; };
+		60DB47DB244C956D00FFFE43 /* PONG2 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4788244C956D00FFFE43 /* PONG2 */; };
+		60DB47DC244C956D00FFFE43 /* GUESS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4789244C956D00FFFE43 /* GUESS */; };
+		60DB47DD244C956D00FFFE43 /* GUESS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4789244C956D00FFFE43 /* GUESS */; };
+		60DB47DE244C956D00FFFE43 /* GUESS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4789244C956D00FFFE43 /* GUESS */; };
+		60DB47DF244C956D00FFFE43 /* GUESS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4789244C956D00FFFE43 /* GUESS */; };
+		60DB47E0244C956D00FFFE43 /* BRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478A244C956D00FFFE43 /* BRIX */; };
+		60DB47E1244C956D00FFFE43 /* BRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478A244C956D00FFFE43 /* BRIX */; };
+		60DB47E2244C956D00FFFE43 /* BRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478A244C956D00FFFE43 /* BRIX */; };
+		60DB47E3244C956D00FFFE43 /* BRIX in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478A244C956D00FFFE43 /* BRIX */; };
+		60DB47E4244C956D00FFFE43 /* 15PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478B244C956D00FFFE43 /* 15PUZZLE */; };
+		60DB47E5244C956D00FFFE43 /* 15PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478B244C956D00FFFE43 /* 15PUZZLE */; };
+		60DB47E6244C956D00FFFE43 /* 15PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478B244C956D00FFFE43 /* 15PUZZLE */; };
+		60DB47E7244C956D00FFFE43 /* 15PUZZLE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB478B244C956D00FFFE43 /* 15PUZZLE */; };
+		60DB47E9244C999D00FFFE43 /* Chip8Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB47E8244C999D00FFFE43 /* Chip8Games.swift */; };
+		60DB47EA244C999D00FFFE43 /* Chip8Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB47E8244C999D00FFFE43 /* Chip8Games.swift */; };
+		60DB47EB244C999D00FFFE43 /* Chip8Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB47E8244C999D00FFFE43 /* Chip8Games.swift */; };
+		60DB47EC244C999D00FFFE43 /* Chip8Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB47E8244C999D00FFFE43 /* Chip8Games.swift */; };
+		60DB47F3244CBE5D00FFFE43 /* INVADERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB47F2244CBE5D00FFFE43 /* INVADERS */; };
+		60DB47F4244CBE5D00FFFE43 /* INVADERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB47F2244CBE5D00FFFE43 /* INVADERS */; };
+		60DB47F5244CBE5D00FFFE43 /* INVADERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB47F2244CBE5D00FFFE43 /* INVADERS */; };
+		60DB47F6244CBE5D00FFFE43 /* INVADERS in Resources */ = {isa = PBXBuildFile; fileRef = 60DB47F2244CBE5D00FFFE43 /* INVADERS */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		601EE83C244C73E9005C0456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601EE81D244C73E7005C0456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601EE839244C73E9005C0456;
+			remoteInfo = "chip-8 watchOS App";
+		};
+		601EE849244C73E9005C0456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601EE81D244C73E7005C0456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601EE846244C73E9005C0456;
+			remoteInfo = "chip-8 watchOS App Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		601EE884244C73E9005C0456 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				601EE848244C73E9005C0456 /* chip-8 Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE888244C73E9005C0456 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				601EE83B244C73E9005C0456 /* chip-8.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		601EE823244C73E8005C0456 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		601EE824244C73E8005C0456 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		601EE825244C73E9005C0456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		601EE82A244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE82D244C73E9005C0456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		601EE82F244C73E9005C0456 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		601EE832244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		601EE835244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		601EE837244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601EE83A244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE840244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		601EE842244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601EE847244C73E9005C0456 /* chip-8 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "chip-8 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE84C244C73E9005C0456 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		601EE84E244C73E9005C0456 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		601EE850244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601EE855244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE857244C73E9005C0456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		601EE859244C73E9005C0456 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		601EE85C244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		601EE85F244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		601EE861244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601EE866244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE868244C73E9005C0456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		601EE86A244C73E9005C0456 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		601EE86D244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		601EE86F244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601EE8B4244C7C26005C0456 /* Chip8CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip8CPU.swift; sourceTree = "<group>"; };
+		60DB4775244C956D00FFFE43 /* WIPEOFF */ = {isa = PBXFileReference; lastKnownFileType = file; path = WIPEOFF; sourceTree = "<group>"; };
+		60DB4776244C956D00FFFE43 /* MISSILE */ = {isa = PBXFileReference; lastKnownFileType = file; path = MISSILE; sourceTree = "<group>"; };
+		60DB4777244C956D00FFFE43 /* VERS */ = {isa = PBXFileReference; lastKnownFileType = file; path = VERS; sourceTree = "<group>"; };
+		60DB4778244C956D00FFFE43 /* TANK */ = {isa = PBXFileReference; lastKnownFileType = file; path = TANK; sourceTree = "<group>"; };
+		60DB4779244C956D00FFFE43 /* BLINKY */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLINKY; sourceTree = "<group>"; };
+		60DB477A244C956D00FFFE43 /* CONNECT4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CONNECT4; sourceTree = "<group>"; };
+		60DB477B244C956D00FFFE43 /* TICTAC */ = {isa = PBXFileReference; lastKnownFileType = file; path = TICTAC; sourceTree = "<group>"; };
+		60DB477C244C956D00FFFE43 /* MERLIN */ = {isa = PBXFileReference; lastKnownFileType = file; path = MERLIN; sourceTree = "<group>"; };
+		60DB477D244C956D00FFFE43 /* HIDDEN */ = {isa = PBXFileReference; lastKnownFileType = file; path = HIDDEN; sourceTree = "<group>"; };
+		60DB477E244C956D00FFFE43 /* PUZZLE */ = {isa = PBXFileReference; lastKnownFileType = file; path = PUZZLE; sourceTree = "<group>"; };
+		60DB4780244C956D00FFFE43 /* KALEID */ = {isa = PBXFileReference; lastKnownFileType = file; path = KALEID; sourceTree = "<group>"; };
+		60DB4781244C956D00FFFE43 /* TETRIS */ = {isa = PBXFileReference; lastKnownFileType = file; path = TETRIS; sourceTree = "<group>"; };
+		60DB4782244C956D00FFFE43 /* BLITZ */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLITZ; sourceTree = "<group>"; };
+		60DB4783244C956D00FFFE43 /* UFO */ = {isa = PBXFileReference; lastKnownFileType = file; path = UFO; sourceTree = "<group>"; };
+		60DB4784244C956D00FFFE43 /* VBRIX */ = {isa = PBXFileReference; lastKnownFileType = file; path = VBRIX; sourceTree = "<group>"; };
+		60DB4785244C956D00FFFE43 /* SYZYGY */ = {isa = PBXFileReference; lastKnownFileType = file; path = SYZYGY; sourceTree = "<group>"; };
+		60DB4786244C956D00FFFE43 /* MAZE */ = {isa = PBXFileReference; lastKnownFileType = file; path = MAZE; sourceTree = "<group>"; };
+		60DB4787244C956D00FFFE43 /* PONG */ = {isa = PBXFileReference; lastKnownFileType = file; path = PONG; sourceTree = "<group>"; };
+		60DB4788244C956D00FFFE43 /* PONG2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PONG2; sourceTree = "<group>"; };
+		60DB4789244C956D00FFFE43 /* GUESS */ = {isa = PBXFileReference; lastKnownFileType = file; path = GUESS; sourceTree = "<group>"; };
+		60DB478A244C956D00FFFE43 /* BRIX */ = {isa = PBXFileReference; lastKnownFileType = file; path = BRIX; sourceTree = "<group>"; };
+		60DB478B244C956D00FFFE43 /* 15PUZZLE */ = {isa = PBXFileReference; lastKnownFileType = file; path = 15PUZZLE; sourceTree = "<group>"; };
+		60DB47E8244C999D00FFFE43 /* Chip8Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip8Games.swift; sourceTree = "<group>"; };
+		60DB47F2244CBE5D00FFFE43 /* INVADERS */ = {isa = PBXFileReference; lastKnownFileType = file; path = INVADERS; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601EE827244C73E9005C0456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE844244C73E9005C0456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE852244C73E9005C0456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE863244C73E9005C0456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		601EE81C244C73E7005C0456 = {
+			isa = PBXGroup;
+			children = (
+				601EE821244C73E8005C0456 /* chip-8 Shared */,
+				601EE82C244C73E9005C0456 /* chip-8 iOS */,
+				601EE83E244C73E9005C0456 /* chip-8 watchOS App */,
+				601EE84B244C73E9005C0456 /* chip-8 watchOS App Extension */,
+				601EE856244C73E9005C0456 /* chip-8 tvOS */,
+				601EE867244C73E9005C0456 /* chip-8 macOS */,
+				601EE82B244C73E9005C0456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		601EE821244C73E8005C0456 /* chip-8 Shared */ = {
+			isa = PBXGroup;
+			children = (
+				60DB4774244C956D00FFFE43 /* c8games */,
+				601EE823244C73E8005C0456 /* GameScene.sks */,
+				601EE824244C73E8005C0456 /* GameScene.swift */,
+				60DB47E8244C999D00FFFE43 /* Chip8Games.swift */,
+				601EE8B4244C7C26005C0456 /* Chip8CPU.swift */,
+				601EE825244C73E9005C0456 /* Assets.xcassets */,
+			);
+			path = "chip-8 Shared";
+			sourceTree = "<group>";
+		};
+		601EE82B244C73E9005C0456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				601EE82A244C73E9005C0456 /* chip-8.app */,
+				601EE83A244C73E9005C0456 /* chip-8.app */,
+				601EE847244C73E9005C0456 /* chip-8 Extension.appex */,
+				601EE855244C73E9005C0456 /* chip-8.app */,
+				601EE866244C73E9005C0456 /* chip-8.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		601EE82C244C73E9005C0456 /* chip-8 iOS */ = {
+			isa = PBXGroup;
+			children = (
+				601EE82D244C73E9005C0456 /* AppDelegate.swift */,
+				601EE82F244C73E9005C0456 /* GameViewController.swift */,
+				601EE831244C73E9005C0456 /* Main.storyboard */,
+				601EE834244C73E9005C0456 /* LaunchScreen.storyboard */,
+				601EE837244C73E9005C0456 /* Info.plist */,
+			);
+			path = "chip-8 iOS";
+			sourceTree = "<group>";
+		};
+		601EE83E244C73E9005C0456 /* chip-8 watchOS App */ = {
+			isa = PBXGroup;
+			children = (
+				601EE83F244C73E9005C0456 /* Interface.storyboard */,
+				601EE842244C73E9005C0456 /* Info.plist */,
+			);
+			path = "chip-8 watchOS App";
+			sourceTree = "<group>";
+		};
+		601EE84B244C73E9005C0456 /* chip-8 watchOS App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				601EE84C244C73E9005C0456 /* InterfaceController.swift */,
+				601EE84E244C73E9005C0456 /* ExtensionDelegate.swift */,
+				601EE850244C73E9005C0456 /* Info.plist */,
+			);
+			path = "chip-8 watchOS App Extension";
+			sourceTree = "<group>";
+		};
+		601EE856244C73E9005C0456 /* chip-8 tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				601EE857244C73E9005C0456 /* AppDelegate.swift */,
+				601EE859244C73E9005C0456 /* GameViewController.swift */,
+				601EE85B244C73E9005C0456 /* Main.storyboard */,
+				601EE85E244C73E9005C0456 /* LaunchScreen.storyboard */,
+				601EE861244C73E9005C0456 /* Info.plist */,
+			);
+			path = "chip-8 tvOS";
+			sourceTree = "<group>";
+		};
+		601EE867244C73E9005C0456 /* chip-8 macOS */ = {
+			isa = PBXGroup;
+			children = (
+				601EE868244C73E9005C0456 /* AppDelegate.swift */,
+				601EE86A244C73E9005C0456 /* GameViewController.swift */,
+				601EE86C244C73E9005C0456 /* Main.storyboard */,
+				601EE86F244C73E9005C0456 /* Info.plist */,
+			);
+			path = "chip-8 macOS";
+			sourceTree = "<group>";
+		};
+		60DB4774244C956D00FFFE43 /* c8games */ = {
+			isa = PBXGroup;
+			children = (
+				60DB4775244C956D00FFFE43 /* WIPEOFF */,
+				60DB4776244C956D00FFFE43 /* MISSILE */,
+				60DB4777244C956D00FFFE43 /* VERS */,
+				60DB4778244C956D00FFFE43 /* TANK */,
+				60DB4779244C956D00FFFE43 /* BLINKY */,
+				60DB477A244C956D00FFFE43 /* CONNECT4 */,
+				60DB477B244C956D00FFFE43 /* TICTAC */,
+				60DB477C244C956D00FFFE43 /* MERLIN */,
+				60DB477D244C956D00FFFE43 /* HIDDEN */,
+				60DB477E244C956D00FFFE43 /* PUZZLE */,
+				60DB47F2244CBE5D00FFFE43 /* INVADERS */,
+				60DB4780244C956D00FFFE43 /* KALEID */,
+				60DB4781244C956D00FFFE43 /* TETRIS */,
+				60DB4782244C956D00FFFE43 /* BLITZ */,
+				60DB4783244C956D00FFFE43 /* UFO */,
+				60DB4784244C956D00FFFE43 /* VBRIX */,
+				60DB4785244C956D00FFFE43 /* SYZYGY */,
+				60DB4786244C956D00FFFE43 /* MAZE */,
+				60DB4787244C956D00FFFE43 /* PONG */,
+				60DB4788244C956D00FFFE43 /* PONG2 */,
+				60DB4789244C956D00FFFE43 /* GUESS */,
+				60DB478A244C956D00FFFE43 /* BRIX */,
+				60DB478B244C956D00FFFE43 /* 15PUZZLE */,
+			);
+			path = c8games;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601EE829244C73E9005C0456 /* chip-8 iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601EE889244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 iOS" */;
+			buildPhases = (
+				601EE826244C73E9005C0456 /* Sources */,
+				601EE827244C73E9005C0456 /* Frameworks */,
+				601EE828244C73E9005C0456 /* Resources */,
+				601EE888244C73E9005C0456 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601EE83D244C73E9005C0456 /* PBXTargetDependency */,
+			);
+			name = "chip-8 iOS";
+			productName = "chip-8 iOS";
+			productReference = 601EE82A244C73E9005C0456 /* chip-8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		601EE839244C73E9005C0456 /* chip-8 watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601EE885244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App" */;
+			buildPhases = (
+				601EE838244C73E9005C0456 /* Resources */,
+				601EE884244C73E9005C0456 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601EE84A244C73E9005C0456 /* PBXTargetDependency */,
+			);
+			name = "chip-8 watchOS App";
+			productName = "chip-8 watchOS App";
+			productReference = 601EE83A244C73E9005C0456 /* chip-8.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		601EE846244C73E9005C0456 /* chip-8 watchOS App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601EE881244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App Extension" */;
+			buildPhases = (
+				601EE843244C73E9005C0456 /* Sources */,
+				601EE844244C73E9005C0456 /* Frameworks */,
+				601EE845244C73E9005C0456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chip-8 watchOS App Extension";
+			productName = "chip-8 watchOS App Extension";
+			productReference = 601EE847244C73E9005C0456 /* chip-8 Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		601EE854244C73E9005C0456 /* chip-8 tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601EE88C244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 tvOS" */;
+			buildPhases = (
+				601EE851244C73E9005C0456 /* Sources */,
+				601EE852244C73E9005C0456 /* Frameworks */,
+				601EE853244C73E9005C0456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chip-8 tvOS";
+			productName = "chip-8 tvOS";
+			productReference = 601EE855244C73E9005C0456 /* chip-8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		601EE865244C73E9005C0456 /* chip-8 macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601EE88F244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 macOS" */;
+			buildPhases = (
+				601EE862244C73E9005C0456 /* Sources */,
+				601EE863244C73E9005C0456 /* Frameworks */,
+				601EE864244C73E9005C0456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chip-8 macOS";
+			productName = "chip-8 macOS";
+			productReference = 601EE866244C73E9005C0456 /* chip-8.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		601EE81D244C73E7005C0456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Kamaal;
+				TargetAttributes = {
+					601EE829244C73E9005C0456 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					601EE839244C73E9005C0456 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					601EE846244C73E9005C0456 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					601EE854244C73E9005C0456 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					601EE865244C73E9005C0456 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 601EE820244C73E7005C0456 /* Build configuration list for PBXProject "chip-8" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 601EE81C244C73E7005C0456;
+			productRefGroup = 601EE82B244C73E9005C0456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				601EE829244C73E9005C0456 /* chip-8 iOS */,
+				601EE839244C73E9005C0456 /* chip-8 watchOS App */,
+				601EE846244C73E9005C0456 /* chip-8 watchOS App Extension */,
+				601EE854244C73E9005C0456 /* chip-8 tvOS */,
+				601EE865244C73E9005C0456 /* chip-8 macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601EE828244C73E9005C0456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DB47C0244C956D00FFFE43 /* BLITZ in Resources */,
+				60DB47E0244C956D00FFFE43 /* BRIX in Resources */,
+				60DB47D0244C956D00FFFE43 /* MAZE in Resources */,
+				60DB47D4244C956D00FFFE43 /* PONG in Resources */,
+				60DB47D8244C956D00FFFE43 /* PONG2 in Resources */,
+				60DB47CC244C956D00FFFE43 /* SYZYGY in Resources */,
+				60DB47F3244CBE5D00FFFE43 /* INVADERS in Resources */,
+				60DB47B8244C956D00FFFE43 /* KALEID in Resources */,
+				60DB47AC244C956D00FFFE43 /* HIDDEN in Resources */,
+				601EE873244C73E9005C0456 /* GameScene.sks in Resources */,
+				60DB479C244C956D00FFFE43 /* BLINKY in Resources */,
+				601EE833244C73E9005C0456 /* Main.storyboard in Resources */,
+				60DB47C4244C956D00FFFE43 /* UFO in Resources */,
+				60DB47C8244C956D00FFFE43 /* VBRIX in Resources */,
+				60DB4798244C956D00FFFE43 /* TANK in Resources */,
+				60DB47E4244C956D00FFFE43 /* 15PUZZLE in Resources */,
+				60DB47BC244C956D00FFFE43 /* TETRIS in Resources */,
+				60DB47A0244C956D00FFFE43 /* CONNECT4 in Resources */,
+				60DB47B0244C956D00FFFE43 /* PUZZLE in Resources */,
+				60DB47A4244C956D00FFFE43 /* TICTAC in Resources */,
+				60DB47DC244C956D00FFFE43 /* GUESS in Resources */,
+				60DB4794244C956D00FFFE43 /* VERS in Resources */,
+				601EE836244C73E9005C0456 /* LaunchScreen.storyboard in Resources */,
+				60DB4790244C956D00FFFE43 /* MISSILE in Resources */,
+				60DB47A8244C956D00FFFE43 /* MERLIN in Resources */,
+				60DB478C244C956D00FFFE43 /* WIPEOFF in Resources */,
+				601EE87B244C73E9005C0456 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE838244C73E9005C0456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601EE87C244C73E9005C0456 /* Assets.xcassets in Resources */,
+				601EE841244C73E9005C0456 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE845244C73E9005C0456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DB47E5244C956D00FFFE43 /* 15PUZZLE in Resources */,
+				60DB47DD244C956D00FFFE43 /* GUESS in Resources */,
+				60DB47B9244C956D00FFFE43 /* KALEID in Resources */,
+				60DB47E1244C956D00FFFE43 /* BRIX in Resources */,
+				60DB47CD244C956D00FFFE43 /* SYZYGY in Resources */,
+				60DB47C9244C956D00FFFE43 /* VBRIX in Resources */,
+				60DB47AD244C956D00FFFE43 /* HIDDEN in Resources */,
+				60DB47BD244C956D00FFFE43 /* TETRIS in Resources */,
+				60DB47A9244C956D00FFFE43 /* MERLIN in Resources */,
+				60DB47C5244C956D00FFFE43 /* UFO in Resources */,
+				60DB4795244C956D00FFFE43 /* VERS in Resources */,
+				60DB47D9244C956D00FFFE43 /* PONG2 in Resources */,
+				60DB47F4244CBE5D00FFFE43 /* INVADERS in Resources */,
+				60DB479D244C956D00FFFE43 /* BLINKY in Resources */,
+				60DB47D1244C956D00FFFE43 /* MAZE in Resources */,
+				60DB4799244C956D00FFFE43 /* TANK in Resources */,
+				60DB4791244C956D00FFFE43 /* MISSILE in Resources */,
+				60DB47A1244C956D00FFFE43 /* CONNECT4 in Resources */,
+				601EE874244C73E9005C0456 /* GameScene.sks in Resources */,
+				60DB47A5244C956D00FFFE43 /* TICTAC in Resources */,
+				60DB47D5244C956D00FFFE43 /* PONG in Resources */,
+				60DB47C1244C956D00FFFE43 /* BLITZ in Resources */,
+				60DB47B1244C956D00FFFE43 /* PUZZLE in Resources */,
+				60DB478D244C956D00FFFE43 /* WIPEOFF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE853244C73E9005C0456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DB47C2244C956D00FFFE43 /* BLITZ in Resources */,
+				60DB47E2244C956D00FFFE43 /* BRIX in Resources */,
+				60DB47D2244C956D00FFFE43 /* MAZE in Resources */,
+				60DB47D6244C956D00FFFE43 /* PONG in Resources */,
+				60DB47DA244C956D00FFFE43 /* PONG2 in Resources */,
+				60DB47CE244C956D00FFFE43 /* SYZYGY in Resources */,
+				60DB47F5244CBE5D00FFFE43 /* INVADERS in Resources */,
+				60DB47BA244C956D00FFFE43 /* KALEID in Resources */,
+				60DB47AE244C956D00FFFE43 /* HIDDEN in Resources */,
+				601EE875244C73E9005C0456 /* GameScene.sks in Resources */,
+				60DB479E244C956D00FFFE43 /* BLINKY in Resources */,
+				601EE85D244C73E9005C0456 /* Main.storyboard in Resources */,
+				60DB47C6244C956D00FFFE43 /* UFO in Resources */,
+				60DB47CA244C956D00FFFE43 /* VBRIX in Resources */,
+				60DB479A244C956D00FFFE43 /* TANK in Resources */,
+				60DB47E6244C956D00FFFE43 /* 15PUZZLE in Resources */,
+				60DB47BE244C956D00FFFE43 /* TETRIS in Resources */,
+				60DB47A2244C956D00FFFE43 /* CONNECT4 in Resources */,
+				60DB47B2244C956D00FFFE43 /* PUZZLE in Resources */,
+				60DB47A6244C956D00FFFE43 /* TICTAC in Resources */,
+				60DB47DE244C956D00FFFE43 /* GUESS in Resources */,
+				60DB4796244C956D00FFFE43 /* VERS in Resources */,
+				601EE860244C73E9005C0456 /* LaunchScreen.storyboard in Resources */,
+				60DB4792244C956D00FFFE43 /* MISSILE in Resources */,
+				60DB47AA244C956D00FFFE43 /* MERLIN in Resources */,
+				60DB478E244C956D00FFFE43 /* WIPEOFF in Resources */,
+				601EE87D244C73E9005C0456 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE864244C73E9005C0456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DB47F6244CBE5D00FFFE43 /* INVADERS in Resources */,
+				60DB47E3244C956D00FFFE43 /* BRIX in Resources */,
+				60DB47B3244C956D00FFFE43 /* PUZZLE in Resources */,
+				60DB47BF244C956D00FFFE43 /* TETRIS in Resources */,
+				60DB47A7244C956D00FFFE43 /* TICTAC in Resources */,
+				60DB47D3244C956D00FFFE43 /* MAZE in Resources */,
+				60DB47DB244C956D00FFFE43 /* PONG2 in Resources */,
+				601EE86E244C73E9005C0456 /* Main.storyboard in Resources */,
+				60DB47AF244C956D00FFFE43 /* HIDDEN in Resources */,
+				60DB47CF244C956D00FFFE43 /* SYZYGY in Resources */,
+				60DB4793244C956D00FFFE43 /* MISSILE in Resources */,
+				60DB479B244C956D00FFFE43 /* TANK in Resources */,
+				601EE876244C73E9005C0456 /* GameScene.sks in Resources */,
+				60DB47D7244C956D00FFFE43 /* PONG in Resources */,
+				60DB47DF244C956D00FFFE43 /* GUESS in Resources */,
+				601EE87E244C73E9005C0456 /* Assets.xcassets in Resources */,
+				60DB47C7244C956D00FFFE43 /* UFO in Resources */,
+				60DB4797244C956D00FFFE43 /* VERS in Resources */,
+				60DB47AB244C956D00FFFE43 /* MERLIN in Resources */,
+				60DB47CB244C956D00FFFE43 /* VBRIX in Resources */,
+				60DB47BB244C956D00FFFE43 /* KALEID in Resources */,
+				60DB47A3244C956D00FFFE43 /* CONNECT4 in Resources */,
+				60DB478F244C956D00FFFE43 /* WIPEOFF in Resources */,
+				60DB479F244C956D00FFFE43 /* BLINKY in Resources */,
+				60DB47E7244C956D00FFFE43 /* 15PUZZLE in Resources */,
+				60DB47C3244C956D00FFFE43 /* BLITZ in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601EE826244C73E9005C0456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601EE877244C73E9005C0456 /* GameScene.swift in Sources */,
+				601EE830244C73E9005C0456 /* GameViewController.swift in Sources */,
+				601EE8B5244C7C26005C0456 /* Chip8CPU.swift in Sources */,
+				601EE82E244C73E9005C0456 /* AppDelegate.swift in Sources */,
+				60DB47E9244C999D00FFFE43 /* Chip8Games.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE843244C73E9005C0456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601EE878244C73E9005C0456 /* GameScene.swift in Sources */,
+				601EE84F244C73E9005C0456 /* ExtensionDelegate.swift in Sources */,
+				60DB4773244C8CFE00FFFE43 /* Chip8CPU.swift in Sources */,
+				601EE84D244C73E9005C0456 /* InterfaceController.swift in Sources */,
+				60DB47EA244C999D00FFFE43 /* Chip8Games.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE851244C73E9005C0456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601EE879244C73E9005C0456 /* GameScene.swift in Sources */,
+				601EE85A244C73E9005C0456 /* GameViewController.swift in Sources */,
+				60DB4772244C8CFD00FFFE43 /* Chip8CPU.swift in Sources */,
+				601EE858244C73E9005C0456 /* AppDelegate.swift in Sources */,
+				60DB47EB244C999D00FFFE43 /* Chip8Games.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601EE862244C73E9005C0456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601EE87A244C73E9005C0456 /* GameScene.swift in Sources */,
+				601EE86B244C73E9005C0456 /* GameViewController.swift in Sources */,
+				60DB4771244C8CFC00FFFE43 /* Chip8CPU.swift in Sources */,
+				601EE869244C73E9005C0456 /* AppDelegate.swift in Sources */,
+				60DB47EC244C999D00FFFE43 /* Chip8Games.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		601EE83D244C73E9005C0456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601EE839244C73E9005C0456 /* chip-8 watchOS App */;
+			targetProxy = 601EE83C244C73E9005C0456 /* PBXContainerItemProxy */;
+		};
+		601EE84A244C73E9005C0456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601EE846244C73E9005C0456 /* chip-8 watchOS App Extension */;
+			targetProxy = 601EE849244C73E9005C0456 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		601EE831244C73E9005C0456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601EE832244C73E9005C0456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		601EE834244C73E9005C0456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601EE835244C73E9005C0456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		601EE83F244C73E9005C0456 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601EE840244C73E9005C0456 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		601EE85B244C73E9005C0456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601EE85C244C73E9005C0456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		601EE85E244C73E9005C0456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601EE85F244C73E9005C0456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		601EE86C244C73E9005C0456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601EE86D244C73E9005C0456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		601EE87F244C73E9005C0456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		601EE880244C73E9005C0456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		601EE882244C73E9005C0456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				INFOPLIST_FILE = "chip-8 watchOS App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "chip-8 Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		601EE883244C73E9005C0456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				INFOPLIST_FILE = "chip-8 watchOS App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "chip-8 Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		601EE886244C73E9005C0456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				IBSC_MODULE = chip_8_Extension;
+				INFOPLIST_FILE = "chip-8 watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		601EE887244C73E9005C0456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				IBSC_MODULE = chip_8_Extension;
+				INFOPLIST_FILE = "chip-8 watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		601EE88A244C73E9005C0456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				INFOPLIST_FILE = "chip-8 iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		601EE88B244C73E9005C0456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				INFOPLIST_FILE = "chip-8 iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		601EE88D244C73E9005C0456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				INFOPLIST_FILE = "chip-8 tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+		601EE88E244C73E9005C0456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				INFOPLIST_FILE = "chip-8 tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		601EE890244C73E9005C0456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "chip-8 macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		601EE891244C73E9005C0456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DXUKH9VF73;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "chip-8 macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
+				PRODUCT_NAME = "chip-8";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601EE820244C73E7005C0456 /* Build configuration list for PBXProject "chip-8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601EE87F244C73E9005C0456 /* Debug */,
+				601EE880244C73E9005C0456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601EE881244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601EE882244C73E9005C0456 /* Debug */,
+				601EE883244C73E9005C0456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601EE885244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601EE886244C73E9005C0456 /* Debug */,
+				601EE887244C73E9005C0456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601EE889244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601EE88A244C73E9005C0456 /* Debug */,
+				601EE88B244C73E9005C0456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601EE88C244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601EE88D244C73E9005C0456 /* Debug */,
+				601EE88E244C73E9005C0456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601EE88F244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601EE890244C73E9005C0456 /* Debug */,
+				601EE891244C73E9005C0456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 601EE81D244C73E7005C0456 /* Project object */;
+}
