@@ -13,12 +13,10 @@ class GameScene: SKScene {
     var chip8CPU = Chip8CPU()
     var graphics = [SKShapeNode?](repeating: nil, count: 64 * 32)
     var currentGame: Chip8Games = .PONG
+    var gameColor: SKColor = .green
 
-    class func newGameScene() -> GameScene {
-        let gameScene = "GameScene"
-        guard let scene = SKScene(fileNamed: gameScene) as? GameScene else {
-            fatalError("Failed to load \(gameScene).sks")
-        }
+    class func newGameScene(size: CGSize) -> GameScene {
+        let scene = GameScene(size: size)
         scene.scaleMode = .aspectFill
         return scene
     }
@@ -31,13 +29,13 @@ class GameScene: SKScene {
     func initializeGrid(size: CGSize) {
         let minds = min(size.width, size.height)
         let pixelSize = CGSize(width: minds / 64, height: minds / 32)
-        for i in 0...graphics.count-1 {
+        for i in 0..<graphics.count {
             guard let node = graphics[i] else { continue }
             node.removeFromParent()
         }
-      
-        for x in 0...63 {
-            for y in 0...31 {
+
+        for x in 0..<64 {
+            for y in 0..<32 {
                 let xConverted = (CGFloat(x) * pixelSize.width)
                 let yConverted = size.height - (CGFloat(y) * pixelSize.height)
                 let shape = SKShapeNode(rect: CGRect(
@@ -45,7 +43,7 @@ class GameScene: SKScene {
                     y: yConverted,
                     width: pixelSize.width,
                     height: pixelSize.height))
-                shape.fillColor = .white
+                shape.fillColor = gameColor
                 shape.strokeColor = .clear
                 addChild(shape)
                 graphics[x + (64 * y)] = shape
@@ -70,7 +68,7 @@ class GameScene: SKScene {
 
         for x in 0..<64 {
             for y in 0..<32 {
-                graphics[x + (64 * y)]!.fillColor = (chip8CPU.graphics[x + (64 * y)] == 1 ? .white : .clear)
+                graphics[x + (64 * y)]!.fillColor = (chip8CPU.graphics[x + (64 * y)] == 1 ? gameColor : .clear)
             }
         }
 
@@ -97,7 +95,6 @@ extension GameScene {
 #endif
 
 #if os(OSX)
-// Mouse-based event handling
 extension GameScene {
     override func keyDown(with event: NSEvent) {
         switch currentGame {
@@ -108,16 +105,20 @@ extension GameScene {
             case 0x0: // A key
                 chip8CPU.key[4] = 1 // left
             case 0x2: // D key
-                chip8CPU.key[6] = 1
+                chip8CPU.key[6] = 1 // right
             default:
                 print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
             }
         case .PONG:
             switch event.keyCode {
             case 0xD: // W key
-                chip8CPU.key[1] = 1 // up
+                chip8CPU.key[1] = 1 // player 1 up
             case 0x1: // S key
-                chip8CPU.key[4] = 1 // down
+                chip8CPU.key[4] = 1 // player 1 down
+            case 0x22 : // I key
+                chip8CPU.key[12] = 1 // player 2 up
+            case 0x28: // K key
+                chip8CPU.key[13] = 1 // player 2 down
             default:
                 print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
             }

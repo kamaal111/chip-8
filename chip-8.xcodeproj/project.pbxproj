@@ -23,10 +23,6 @@
 		601EE869244C73E9005C0456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE868244C73E9005C0456 /* AppDelegate.swift */; };
 		601EE86B244C73E9005C0456 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE86A244C73E9005C0456 /* GameViewController.swift */; };
 		601EE86E244C73E9005C0456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE86C244C73E9005C0456 /* Main.storyboard */; };
-		601EE873244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
-		601EE874244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
-		601EE875244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
-		601EE876244C73E9005C0456 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 601EE823244C73E8005C0456 /* GameScene.sks */; };
 		601EE877244C73E9005C0456 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE824244C73E8005C0456 /* GameScene.swift */; };
 		601EE878244C73E9005C0456 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE824244C73E8005C0456 /* GameScene.swift */; };
 		601EE879244C73E9005C0456 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE824244C73E8005C0456 /* GameScene.swift */; };
@@ -36,6 +32,10 @@
 		601EE87D244C73E9005C0456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601EE825244C73E9005C0456 /* Assets.xcassets */; };
 		601EE87E244C73E9005C0456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601EE825244C73E9005C0456 /* Assets.xcassets */; };
 		601EE8B5244C7C26005C0456 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
+		606F5CFD244E125600D8BA58 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 606F5CFC244E125500D8BA58 /* PONG */; };
+		606F5CFE244E125600D8BA58 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 606F5CFC244E125500D8BA58 /* PONG */; };
+		606F5CFF244E125600D8BA58 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 606F5CFC244E125500D8BA58 /* PONG */; };
+		606F5D00244E125600D8BA58 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 606F5CFC244E125500D8BA58 /* PONG */; };
 		60DB4771244C8CFC00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
 		60DB4772244C8CFD00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
 		60DB4773244C8CFE00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
@@ -107,10 +107,6 @@
 		60DB47D1244C956D00FFFE43 /* MAZE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4786244C956D00FFFE43 /* MAZE */; };
 		60DB47D2244C956D00FFFE43 /* MAZE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4786244C956D00FFFE43 /* MAZE */; };
 		60DB47D3244C956D00FFFE43 /* MAZE in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4786244C956D00FFFE43 /* MAZE */; };
-		60DB47D4244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
-		60DB47D5244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
-		60DB47D6244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
-		60DB47D7244C956D00FFFE43 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4787244C956D00FFFE43 /* PONG */; };
 		60DB47D8244C956D00FFFE43 /* PONG2 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4788244C956D00FFFE43 /* PONG2 */; };
 		60DB47D9244C956D00FFFE43 /* PONG2 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4788244C956D00FFFE43 /* PONG2 */; };
 		60DB47DA244C956D00FFFE43 /* PONG2 in Resources */ = {isa = PBXBuildFile; fileRef = 60DB4788244C956D00FFFE43 /* PONG2 */; };
@@ -180,7 +176,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		601EE823244C73E8005C0456 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		601EE824244C73E8005C0456 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		601EE825244C73E9005C0456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		601EE82A244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +203,7 @@
 		601EE86D244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		601EE86F244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		601EE8B4244C7C26005C0456 /* Chip8CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip8CPU.swift; sourceTree = "<group>"; };
+		606F5CFC244E125500D8BA58 /* PONG */ = {isa = PBXFileReference; lastKnownFileType = file; path = PONG; sourceTree = "<group>"; };
 		60DB4775244C956D00FFFE43 /* WIPEOFF */ = {isa = PBXFileReference; lastKnownFileType = file; path = WIPEOFF; sourceTree = "<group>"; };
 		60DB4776244C956D00FFFE43 /* MISSILE */ = {isa = PBXFileReference; lastKnownFileType = file; path = MISSILE; sourceTree = "<group>"; };
 		60DB4777244C956D00FFFE43 /* VERS */ = {isa = PBXFileReference; lastKnownFileType = file; path = VERS; sourceTree = "<group>"; };
@@ -225,7 +221,6 @@
 		60DB4784244C956D00FFFE43 /* VBRIX */ = {isa = PBXFileReference; lastKnownFileType = file; path = VBRIX; sourceTree = "<group>"; };
 		60DB4785244C956D00FFFE43 /* SYZYGY */ = {isa = PBXFileReference; lastKnownFileType = file; path = SYZYGY; sourceTree = "<group>"; };
 		60DB4786244C956D00FFFE43 /* MAZE */ = {isa = PBXFileReference; lastKnownFileType = file; path = MAZE; sourceTree = "<group>"; };
-		60DB4787244C956D00FFFE43 /* PONG */ = {isa = PBXFileReference; lastKnownFileType = file; path = PONG; sourceTree = "<group>"; };
 		60DB4788244C956D00FFFE43 /* PONG2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PONG2; sourceTree = "<group>"; };
 		60DB4789244C956D00FFFE43 /* GUESS */ = {isa = PBXFileReference; lastKnownFileType = file; path = GUESS; sourceTree = "<group>"; };
 		60DB478A244C956D00FFFE43 /* BRIX */ = {isa = PBXFileReference; lastKnownFileType = file; path = BRIX; sourceTree = "<group>"; };
@@ -283,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				60DB4774244C956D00FFFE43 /* c8games */,
-				601EE823244C73E8005C0456 /* GameScene.sks */,
 				601EE824244C73E8005C0456 /* GameScene.swift */,
 				60DB47E8244C999D00FFFE43 /* Chip8Games.swift */,
 				601EE8B4244C7C26005C0456 /* Chip8CPU.swift */,
@@ -379,7 +373,7 @@
 				60DB4784244C956D00FFFE43 /* VBRIX */,
 				60DB4785244C956D00FFFE43 /* SYZYGY */,
 				60DB4786244C956D00FFFE43 /* MAZE */,
-				60DB4787244C956D00FFFE43 /* PONG */,
+				606F5CFC244E125500D8BA58 /* PONG */,
 				60DB4788244C956D00FFFE43 /* PONG2 */,
 				60DB4789244C956D00FFFE43 /* GUESS */,
 				60DB478A244C956D00FFFE43 /* BRIX */,
@@ -535,13 +529,11 @@
 				60DB47C0244C956D00FFFE43 /* BLITZ in Resources */,
 				60DB47E0244C956D00FFFE43 /* BRIX in Resources */,
 				60DB47D0244C956D00FFFE43 /* MAZE in Resources */,
-				60DB47D4244C956D00FFFE43 /* PONG in Resources */,
 				60DB47D8244C956D00FFFE43 /* PONG2 in Resources */,
 				60DB47CC244C956D00FFFE43 /* SYZYGY in Resources */,
 				60DB47F3244CBE5D00FFFE43 /* INVADERS in Resources */,
 				60DB47B8244C956D00FFFE43 /* KALEID in Resources */,
 				60DB47AC244C956D00FFFE43 /* HIDDEN in Resources */,
-				601EE873244C73E9005C0456 /* GameScene.sks in Resources */,
 				60DB479C244C956D00FFFE43 /* BLINKY in Resources */,
 				601EE833244C73E9005C0456 /* Main.storyboard in Resources */,
 				60DB47C4244C956D00FFFE43 /* UFO in Resources */,
@@ -552,6 +544,7 @@
 				60DB47A0244C956D00FFFE43 /* CONNECT4 in Resources */,
 				60DB47B0244C956D00FFFE43 /* PUZZLE in Resources */,
 				60DB47A4244C956D00FFFE43 /* TICTAC in Resources */,
+				606F5CFD244E125600D8BA58 /* PONG in Resources */,
 				60DB47DC244C956D00FFFE43 /* GUESS in Resources */,
 				60DB4794244C956D00FFFE43 /* VERS in Resources */,
 				601EE836244C73E9005C0456 /* LaunchScreen.storyboard in Resources */,
@@ -591,11 +584,10 @@
 				60DB479D244C956D00FFFE43 /* BLINKY in Resources */,
 				60DB47D1244C956D00FFFE43 /* MAZE in Resources */,
 				60DB4799244C956D00FFFE43 /* TANK in Resources */,
+				606F5CFE244E125600D8BA58 /* PONG in Resources */,
 				60DB4791244C956D00FFFE43 /* MISSILE in Resources */,
 				60DB47A1244C956D00FFFE43 /* CONNECT4 in Resources */,
-				601EE874244C73E9005C0456 /* GameScene.sks in Resources */,
 				60DB47A5244C956D00FFFE43 /* TICTAC in Resources */,
-				60DB47D5244C956D00FFFE43 /* PONG in Resources */,
 				60DB47C1244C956D00FFFE43 /* BLITZ in Resources */,
 				60DB47B1244C956D00FFFE43 /* PUZZLE in Resources */,
 				60DB478D244C956D00FFFE43 /* WIPEOFF in Resources */,
@@ -609,13 +601,11 @@
 				60DB47C2244C956D00FFFE43 /* BLITZ in Resources */,
 				60DB47E2244C956D00FFFE43 /* BRIX in Resources */,
 				60DB47D2244C956D00FFFE43 /* MAZE in Resources */,
-				60DB47D6244C956D00FFFE43 /* PONG in Resources */,
 				60DB47DA244C956D00FFFE43 /* PONG2 in Resources */,
 				60DB47CE244C956D00FFFE43 /* SYZYGY in Resources */,
 				60DB47F5244CBE5D00FFFE43 /* INVADERS in Resources */,
 				60DB47BA244C956D00FFFE43 /* KALEID in Resources */,
 				60DB47AE244C956D00FFFE43 /* HIDDEN in Resources */,
-				601EE875244C73E9005C0456 /* GameScene.sks in Resources */,
 				60DB479E244C956D00FFFE43 /* BLINKY in Resources */,
 				601EE85D244C73E9005C0456 /* Main.storyboard in Resources */,
 				60DB47C6244C956D00FFFE43 /* UFO in Resources */,
@@ -626,6 +616,7 @@
 				60DB47A2244C956D00FFFE43 /* CONNECT4 in Resources */,
 				60DB47B2244C956D00FFFE43 /* PUZZLE in Resources */,
 				60DB47A6244C956D00FFFE43 /* TICTAC in Resources */,
+				606F5CFF244E125600D8BA58 /* PONG in Resources */,
 				60DB47DE244C956D00FFFE43 /* GUESS in Resources */,
 				60DB4796244C956D00FFFE43 /* VERS in Resources */,
 				601EE860244C73E9005C0456 /* LaunchScreen.storyboard in Resources */,
@@ -646,14 +637,13 @@
 				60DB47BF244C956D00FFFE43 /* TETRIS in Resources */,
 				60DB47A7244C956D00FFFE43 /* TICTAC in Resources */,
 				60DB47D3244C956D00FFFE43 /* MAZE in Resources */,
+				606F5D00244E125600D8BA58 /* PONG in Resources */,
 				60DB47DB244C956D00FFFE43 /* PONG2 in Resources */,
 				601EE86E244C73E9005C0456 /* Main.storyboard in Resources */,
 				60DB47AF244C956D00FFFE43 /* HIDDEN in Resources */,
 				60DB47CF244C956D00FFFE43 /* SYZYGY in Resources */,
 				60DB4793244C956D00FFFE43 /* MISSILE in Resources */,
 				60DB479B244C956D00FFFE43 /* TANK in Resources */,
-				601EE876244C73E9005C0456 /* GameScene.sks in Resources */,
-				60DB47D7244C956D00FFFE43 /* PONG in Resources */,
 				60DB47DF244C956D00FFFE43 /* GUESS in Resources */,
 				601EE87E244C73E9005C0456 /* Assets.xcassets in Resources */,
 				60DB47C7244C956D00FFFE43 /* UFO in Resources */,
