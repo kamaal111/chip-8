@@ -9,27 +9,27 @@
 import Foundation
 
 enum Chip8Games: String {
-    case WIPEOFF
-    case MISSILE
-    case VERS
+//    case WIPEOFF
+//    case MISSILE
+//    case VERS
     case TANK
-    case BLINKY
-    case CONNECT4
-    case TICTAC
-    case MERLIN
-    case HIDDEN
-    case PUZZLE
+//    case BLINKY
+//    case CONNECT4
+//    case TICTAC
+//    case MERLIN
+//    case HIDDEN
+//    case PUZZLE
     case INVADERS
-    case KALEID
+//    case KALEID
     case TETRIS
-    case BLITZ
-    case UFO
-    case VBRIX
-    case SYZYGY
-    case MAZE
+//    case BLITZ
+//    case UFO
+//    case VBRIX
+//    case SYZYGY
+//    case MAZE
     case PONG
     case PONG2
-    case GUESS
-    case BRIX
-    case FIFTEENPUZZLE = "15PUZZLE"
+//    case GUESS
+//    case BRIX
+//    case FIFTEENPUZZLE = "15PUZZLE"
 }

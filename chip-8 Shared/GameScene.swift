@@ -12,12 +12,12 @@ class GameScene: SKScene {
 
     var chip8CPU = Chip8CPU()
     var graphics = [SKShapeNode?](repeating: nil, count: 64 * 32)
-    var currentGame: Chip8Games = .PONG
+    var currentGame: Chip8Games = .PONG2
     var gameColor: SKColor = .green
 
     class func newGameScene(size: CGSize) -> GameScene {
         let scene = GameScene(size: size)
-        scene.scaleMode = .aspectFill
+        scene.scaleMode = .aspectFit
         return scene
     }
 
@@ -119,6 +119,43 @@ extension GameScene {
                 chip8CPU.key[12] = 1 // player 2 up
             case 0x28: // K key
                 chip8CPU.key[13] = 1 // player 2 down
+            default:
+                print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
+            }
+        case .PONG2:
+            switch event.keyCode {
+            case 0xD: // W key
+                chip8CPU.key[1] = 1 // player 1 up
+            case 0x1: // S key
+                chip8CPU.key[4] = 1 // player 1 down
+            case 0x22 : // I key
+                chip8CPU.key[12] = 1 // player 2 up
+            case 0x28: // K key
+                chip8CPU.key[13] = 1 // player 2 down
+            default:
+                print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
+            }
+        case .TANK:
+            switch event.keyCode {
+            case 0x31: // Spacebar key
+                chip8CPU.key[5] = 1 // shoot
+            case 0x0: // A key
+                chip8CPU.key[4] = 1 // left
+            case 0x2: // D key
+                chip8CPU.key[6] = 1 // right
+            case 0xD: // W key
+                chip8CPU.key[8] = 1 // up
+            case 0x1: // S key
+                chip8CPU.key[2] = 1 // down
+            default:
+                print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
+            }
+        case .TETRIS:
+            switch event.keyCode {
+            case 0x0: // A key
+                chip8CPU.key[5] = 1 // left
+            case 0x2: // D key
+                chip8CPU.key[6] = 1 // right
             default:
                 print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
             }

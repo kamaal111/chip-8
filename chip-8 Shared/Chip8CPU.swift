@@ -337,12 +337,12 @@ class Chip8CPU {
             pixel = UInt16(memory[Int(indexRegister + yLine)])
             for xLine in 0..<8 where pixel & UInt16(0x80 >> UInt8(xLine)) != 0 {
                 let gfxLocation = (Int(x) + xLine + Int((y + yLine) * 64))
-            //                if gfxLocation <= graphics.count {
-                if graphics[gfxLocation] == 1 {
-                    vRegisters[0xF] = 1
-                }
-                graphics[gfxLocation] = graphics[gfxLocation] ^ 1
-            //                }
+                if gfxLocation < graphics.count {
+                    if graphics[gfxLocation] == 1 {
+                        vRegisters[0xF] = 1
+                    }
+                    graphics[gfxLocation] = graphics[gfxLocation] ^ 1
+                    }
                 }
             }
             drawFlag = true
