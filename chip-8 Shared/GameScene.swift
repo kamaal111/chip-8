@@ -10,14 +10,13 @@ import SpriteKit
 
 class GameScene: SKScene {
 
-    var chip8CPU = Chip8CPU()
+    var chip8CPU = Chip8CPU(kowalskiAnalysis: false)
     var graphics = [SKShapeNode?](repeating: nil, count: 64 * 32)
     var currentGame: Chip8Games = .PONG2
     var gameColor: SKColor = .green
 
     class func newGameScene(size: CGSize) -> GameScene {
         let scene = GameScene(size: size)
-        scene.scaleMode = .aspectFit
         return scene
     }
 
@@ -159,8 +158,8 @@ extension GameScene {
             default:
                 print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
             }
-        default:
-            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
+//        default:
+//            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
         }
     }
 

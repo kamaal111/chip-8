@@ -36,6 +36,7 @@
 		606F5CFE244E125600D8BA58 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 606F5CFC244E125500D8BA58 /* PONG */; };
 		606F5CFF244E125600D8BA58 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 606F5CFC244E125500D8BA58 /* PONG */; };
 		606F5D00244E125600D8BA58 /* PONG in Resources */ = {isa = PBXBuildFile; fileRef = 606F5CFC244E125500D8BA58 /* PONG */; };
+		606F5D02244E307200D8BA58 /* Chip8CPU+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5D01244E307200D8BA58 /* Chip8CPU+extensions.swift */; };
 		60DB4771244C8CFC00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
 		60DB4772244C8CFD00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
 		60DB4773244C8CFE00FFFE43 /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE8B4244C7C26005C0456 /* Chip8CPU.swift */; };
@@ -204,6 +205,7 @@
 		601EE86F244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		601EE8B4244C7C26005C0456 /* Chip8CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip8CPU.swift; sourceTree = "<group>"; };
 		606F5CFC244E125500D8BA58 /* PONG */ = {isa = PBXFileReference; lastKnownFileType = file; path = PONG; sourceTree = "<group>"; };
+		606F5D01244E307200D8BA58 /* Chip8CPU+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chip8CPU+extensions.swift"; sourceTree = "<group>"; };
 		60DB4775244C956D00FFFE43 /* WIPEOFF */ = {isa = PBXFileReference; lastKnownFileType = file; path = WIPEOFF; sourceTree = "<group>"; };
 		60DB4776244C956D00FFFE43 /* MISSILE */ = {isa = PBXFileReference; lastKnownFileType = file; path = MISSILE; sourceTree = "<group>"; };
 		60DB4777244C956D00FFFE43 /* VERS */ = {isa = PBXFileReference; lastKnownFileType = file; path = VERS; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 			children = (
 				601EE868244C73E9005C0456 /* AppDelegate.swift */,
 				601EE86A244C73E9005C0456 /* GameViewController.swift */,
+				606F5D01244E307200D8BA58 /* Chip8CPU+extensions.swift */,
 				601EE86C244C73E9005C0456 /* Main.storyboard */,
 				601EE86F244C73E9005C0456 /* Info.plist */,
 			);
@@ -703,6 +706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				601EE87A244C73E9005C0456 /* GameScene.swift in Sources */,
+				606F5D02244E307200D8BA58 /* Chip8CPU+extensions.swift in Sources */,
 				601EE86B244C73E9005C0456 /* GameViewController.swift in Sources */,
 				60DB4771244C8CFC00FFFE43 /* Chip8CPU.swift in Sources */,
 				601EE869244C73E9005C0456 /* AppDelegate.swift in Sources */,

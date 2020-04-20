@@ -80,19 +80,8 @@ class Chip8CPU {
         0xF0, 0x80, 0xF0, 0x80, 0x80  // F
     ]
 
-    private var debugging = false
-
-    init() {
-      // load fontset
-      for index in 0..<chip8Fontset.count {
-        memory[index] = chip8Fontset[index]
-      }
-      // reset timers
-      srand48(time(nil))
-    }
-
-    init(kwalskiAnalisys: Bool) {
-        self.debugging = kwalskiAnalisys
+    init(kowalskiAnalysis: Bool) {
+        self.debugging = kowalskiAnalysis
         // load fontset
         for index in 0..<chip8Fontset.count {
           memory[index] = chip8Fontset[index]
@@ -132,6 +121,10 @@ class Chip8CPU {
         decodeAndExecuteOpcodes()
         updateTimers()
     }
+
+    // MARK: Private
+
+    private var debugging = false
 
     private func fetchUpcodes() {
         let counter = Int(exactly: programCounter)!
@@ -334,14 +327,14 @@ class Chip8CPU {
             debugPrint(words: "Drawing sprite at (\(x), \(y)) h:\(height)")
             vRegisters[0xF] = 0
             for yLine in 0..<height {
-            pixel = UInt16(memory[Int(indexRegister + yLine)])
-            for xLine in 0..<8 where pixel & UInt16(0x80 >> UInt8(xLine)) != 0 {
-                let gfxLocation = (Int(x) + xLine + Int((y + yLine) * 64))
-                if gfxLocation < graphics.count {
-                    if graphics[gfxLocation] == 1 {
-                        vRegisters[0xF] = 1
-                    }
-                    graphics[gfxLocation] = graphics[gfxLocation] ^ 1
+                pixel = UInt16(memory[Int(indexRegister + yLine)])
+                for xLine in 0..<8 where pixel & UInt16(0x80 >> UInt8(xLine)) != 0 {
+                    let gfxLocation = (Int(x) + xLine + Int((y + yLine) * 64))
+                    if gfxLocation < graphics.count {
+                        if graphics[gfxLocation] == 1 {
+                            vRegisters[0xF] = 1
+                        }
+                        graphics[gfxLocation] = graphics[gfxLocation] ^ 1
                     }
                 }
             }
@@ -460,7 +453,8 @@ class Chip8CPU {
         }
         if soundTimer > 0 {
             if soundTimer == 1 {
-                print("BEEP!")
+                // This sound comes from a extension
+                beepSound()
             }
             soundTimer = soundTimer - 1
         }
