@@ -11,57 +11,57 @@ import Foundation
 /// The Chip-8 CPU core implementation
 ///
 /// The specifications of Chip-8.
-class Chip8CPU {
+public class Chip8CPU {
     /// Current operation code.
     ///
     /// CHIP-8 has 35 operation codes. which are all two bytes long and stored big-endian.
-    var opcode: UInt16 = 0
+    public var opcode: UInt16 = 0
 
     /// 16 8-bit data registers referred to as V0 to VF.
     ///
     /// VF doubles as a flag for some instructions; thus, it should be avoided.
-    var vRegisters = [UInt8](repeating: 0, count: 16)
+    public var vRegisters = [UInt8](repeating: 0, count: 16)
 
     /// 4kb (4,096 bytes) of RAM.
     ///
     /// CHIP-8 was most commonly implemented on 4K systems, such as the Cosmac VIP and the Telmac 1800.
-    var memory = [UInt8](repeating: 0, count: 4096)
+    public var memory = [UInt8](repeating: 0, count: 4096)
 
     /// keypad state
     ///
     /// Chip 8 has a HEX based (16 buttons) keypad (0x0-0xF), you can use an array to store the current
     /// state of the key.
-    var key = [UInt8](repeating: 0, count: 16)
+    public var key = [UInt8](repeating: 0, count: 16)
 
     /// graphics memory (64 x 32 pixels)
     ///
     /// The graphics of the Chip 8 are black and white and the screen has a total of 2048 pixels (64 x 32).
     /// This can easily be implemented using an array that hold the pixel state (1 or 0).
-    var graphics = [UInt8](repeating: 0, count: 64 * 32)
+    public var graphics = [UInt8](repeating: 0, count: 64 * 32)
 
     /// A stack of 16 16-bit values, used for subroutine calls.
-    var stack = [UInt16](repeating: 0, count: 16)
+    public var stack = [UInt16](repeating: 0, count: 16)
 
     /// 16-bit program counter
-    var programCounter: UInt16 = 0x200
+    public var programCounter: UInt16 = 0x200
 
     /// 8-bit stack pointer
-    var stackPointer: UInt8 = 0
+    public var stackPointer: UInt8 = 0
 
     /// 8-bit delay timer
-    var delayTimer: UInt8 = 0
+    public var delayTimer: UInt8 = 0
 
     /// 8-bit sound timer
-    var soundTimer: UInt8 = 0
+    public var soundTimer: UInt8 = 0
 
     /// 16-bit index register
-    var indexRegister: UInt16 = 0
+    public var indexRegister: UInt16 = 0
 
     /// Whether or not to draw
-    var drawFlag = false
+    public var drawFlag = false
 
     /// CHIP-8 fontset
-    let chip8Fontset: [UInt8] = [
+    private let chip8Fontset: [UInt8] = [
         0xF0, 0x90, 0x90, 0x90, 0xF0, // 0
         0x20, 0x60, 0x20, 0x20, 0x70, // 1
         0xF0, 0x10, 0xF0, 0x80, 0xF0, // 2
@@ -80,7 +80,7 @@ class Chip8CPU {
         0xF0, 0x80, 0xF0, 0x80, 0x80  // F
     ]
 
-    init(kowalskiAnalysis: Bool) {
+    public init(kowalskiAnalysis: Bool) {
         self.debugging = kowalskiAnalysis
         // load fontset
         for index in 0..<chip8Fontset.count {
@@ -94,7 +94,7 @@ class Chip8CPU {
     ///
     /// - Parameters:
     ///     - programName: The name of the rom to load
-    func loadProgram(withName programName: Chip8Games) {
+    public func loadProgram(withName programName: Chip8Games) {
         guard let path = Bundle.main.path(forResource: programName.rawValue, ofType: nil) else {
             fatalError("Could not find program with the name \(programName)")
         }
@@ -116,13 +116,11 @@ class Chip8CPU {
 
     /// Every cycle, the method emulateCycle is called which emulates one cycle of the Chip 8 CPU.
     /// During this cycle, the emulator will Fetch, Decode and Execute one opcode.
-    func emulateCycles() {
+    public func emulateCycles() {
         fetchUpcodes()
         decodeAndExecuteOpcodes()
         updateTimers()
     }
-
-    // MARK: Private
 
     private var debugging = false
 

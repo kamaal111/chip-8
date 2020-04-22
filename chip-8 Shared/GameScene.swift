@@ -8,24 +8,60 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+public class GameScene: SKScene {
 
-    var chip8CPU = Chip8CPU(kowalskiAnalysis: false)
-    var graphics = [SKShapeNode?](repeating: nil, count: 64 * 32)
-    var currentGame: Chip8Games = .PONG2
-    var gameColor: SKColor = .green
+    private var chip8CPU = Chip8CPU(kowalskiAnalysis: false)
+    private var graphics = [SKShapeNode?](repeating: nil, count: 64 * 32)
+    private var currentGame: Chip8Games = .PONG2
+    private var gameColor: SKColor = .green
 
-    class func newGameScene(size: CGSize) -> GameScene {
-        let scene = GameScene(size: size)
-        return scene
+    private override init(size: CGSize) {
+        super.init(size: size)
     }
 
-    func setUpScene(view: SKView) {
+    private convenience init(size: CGSize, currentGame: Chip8Games) {
+        self.init(size: size)
+        self.currentGame = currentGame
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    public class func newGameScene(size: CGSize, currentGame: Chip8Games) -> GameScene {
+        GameScene(size: size, currentGame: currentGame)
+    }
+
+    #if os(watchOS)
+    public override func sceneDidLoad() {
+        setUpScene()
+    }
+    #else
+    public override func didMove(to view: SKView) {
+        setUpScene(view: view)
+    }
+    #endif
+
+    public override func update(_ currentTime: TimeInterval) {
+        while !chip8CPU.drawFlag {
+            chip8CPU.emulateCycles()
+        }
+
+        for x in 0..<64 {
+            for y in 0..<32 {
+                graphics[x + (64 * y)]?.fillColor = chip8CPU.graphics[x + (64 * y)] == 1 ? gameColor : .clear
+            }
+        }
+
+        chip8CPU.drawFlag = false
+    }
+
+    private func setUpScene(view: SKView) {
         chip8CPU.loadProgram(withName: currentGame)
         initializeGrid(size: view.frame.size)
     }
 
-    func initializeGrid(size: CGSize) {
+    private func initializeGrid(size: CGSize) {
         let minds = min(size.width, size.height)
         let pixelSize = CGSize(width: minds / 64, height: minds / 32)
         for i in 0..<graphics.count {
@@ -50,51 +86,22 @@ class GameScene: SKScene {
         }
     }
 
-    #if os(watchOS)
-    override func sceneDidLoad() {
-        setUpScene()
-    }
-    #else
-    override func didMove(to view: SKView) {
-        setUpScene(view: view)
-    }
-    #endif
-
-    override func update(_ currentTime: TimeInterval) {
-        while !chip8CPU.drawFlag {
-            chip8CPU.emulateCycles()
-        }
-
-        for x in 0..<64 {
-            for y in 0..<32 {
-                graphics[x + (64 * y)]!.fillColor = (chip8CPU.graphics[x + (64 * y)] == 1 ? gameColor : .clear)
-            }
-        }
-
-        chip8CPU.drawFlag = false
-    }
-
 }
 
 #if os(iOS) || os(tvOS)
-// Touch-based event handling
 extension GameScene {
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { }
+
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) { }
+
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) { }
+
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) { }
 }
 #endif
 
 #if os(OSX)
-extension GameScene {
+public extension GameScene {
     override func keyDown(with event: NSEvent) {
         switch currentGame {
         case .INVADERS:

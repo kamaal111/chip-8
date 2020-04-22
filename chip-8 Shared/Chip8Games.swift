@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Chip8Games: String {
+public enum Chip8Games: String {
 //    case WIPEOFF
 //    case MISSILE
 //    case VERS
