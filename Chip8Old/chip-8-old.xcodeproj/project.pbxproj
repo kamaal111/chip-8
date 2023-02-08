@@ -11,9 +11,9 @@
 		601EE830244C73E9005C0456 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE82F244C73E9005C0456 /* GameViewController.swift */; };
 		601EE833244C73E9005C0456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE831244C73E9005C0456 /* Main.storyboard */; };
 		601EE836244C73E9005C0456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE834244C73E9005C0456 /* LaunchScreen.storyboard */; };
-		601EE83B244C73E9005C0456 /* chip-8.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 601EE83A244C73E9005C0456 /* chip-8.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		601EE83B244C73E9005C0456 /* chip-8-old.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 601EE83A244C73E9005C0456 /* chip-8-old.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		601EE841244C73E9005C0456 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601EE83F244C73E9005C0456 /* Interface.storyboard */; };
-		601EE848244C73E9005C0456 /* chip-8 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 601EE847244C73E9005C0456 /* chip-8 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		601EE848244C73E9005C0456 /* chip-8-old Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 601EE847244C73E9005C0456 /* chip-8-old Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		601EE84D244C73E9005C0456 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE84C244C73E9005C0456 /* InterfaceController.swift */; };
 		601EE84F244C73E9005C0456 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE84E244C73E9005C0456 /* ExtensionDelegate.swift */; };
 		601EE858244C73E9005C0456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601EE857244C73E9005C0456 /* AppDelegate.swift */; };
@@ -158,7 +158,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				601EE848244C73E9005C0456 /* chip-8 Extension.appex in Embed App Extensions */,
+				601EE848244C73E9005C0456 /* chip-8-old Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +169,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				601EE83B244C73E9005C0456 /* chip-8.app in Embed Watch Content */,
+				601EE83B244C73E9005C0456 /* chip-8-old.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,26 +179,26 @@
 /* Begin PBXFileReference section */
 		601EE824244C73E8005C0456 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		601EE825244C73E9005C0456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		601EE82A244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE82A244C73E9005C0456 /* chip-8-old.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8-old.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		601EE82D244C73E9005C0456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		601EE82F244C73E9005C0456 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		601EE832244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		601EE835244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		601EE837244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		601EE83A244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE83A244C73E9005C0456 /* chip-8-old.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8-old.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		601EE840244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		601EE842244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		601EE847244C73E9005C0456 /* chip-8 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "chip-8 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE847244C73E9005C0456 /* chip-8-old Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "chip-8-old Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		601EE84C244C73E9005C0456 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		601EE84E244C73E9005C0456 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		601EE850244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		601EE855244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE855244C73E9005C0456 /* chip-8-old.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8-old.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		601EE857244C73E9005C0456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		601EE859244C73E9005C0456 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		601EE85C244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		601EE85F244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		601EE861244C73E9005C0456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		601EE866244C73E9005C0456 /* chip-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		601EE866244C73E9005C0456 /* chip-8-old.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chip-8-old.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		601EE868244C73E9005C0456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		601EE86A244C73E9005C0456 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		601EE86D244C73E9005C0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -291,11 +291,11 @@
 		601EE82B244C73E9005C0456 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				601EE82A244C73E9005C0456 /* chip-8.app */,
-				601EE83A244C73E9005C0456 /* chip-8.app */,
-				601EE847244C73E9005C0456 /* chip-8 Extension.appex */,
-				601EE855244C73E9005C0456 /* chip-8.app */,
-				601EE866244C73E9005C0456 /* chip-8.app */,
+				601EE82A244C73E9005C0456 /* chip-8-old.app */,
+				601EE83A244C73E9005C0456 /* chip-8-old.app */,
+				601EE847244C73E9005C0456 /* chip-8-old Extension.appex */,
+				601EE855244C73E9005C0456 /* chip-8-old.app */,
+				601EE866244C73E9005C0456 /* chip-8-old.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -388,9 +388,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		601EE829244C73E9005C0456 /* chip-8 iOS */ = {
+		601EE829244C73E9005C0456 /* chip-8-old iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 601EE889244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 iOS" */;
+			buildConfigurationList = 601EE889244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old iOS" */;
 			buildPhases = (
 				601EE826244C73E9005C0456 /* Sources */,
 				601EE827244C73E9005C0456 /* Frameworks */,
@@ -402,14 +402,14 @@
 			dependencies = (
 				601EE83D244C73E9005C0456 /* PBXTargetDependency */,
 			);
-			name = "chip-8 iOS";
+			name = "chip-8-old iOS";
 			productName = "chip-8 iOS";
-			productReference = 601EE82A244C73E9005C0456 /* chip-8.app */;
+			productReference = 601EE82A244C73E9005C0456 /* chip-8-old.app */;
 			productType = "com.apple.product-type.application";
 		};
-		601EE839244C73E9005C0456 /* chip-8 watchOS App */ = {
+		601EE839244C73E9005C0456 /* chip-8-old watchOS App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 601EE885244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App" */;
+			buildConfigurationList = 601EE885244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old watchOS App" */;
 			buildPhases = (
 				601EE838244C73E9005C0456 /* Resources */,
 				601EE884244C73E9005C0456 /* Embed App Extensions */,
@@ -419,14 +419,14 @@
 			dependencies = (
 				601EE84A244C73E9005C0456 /* PBXTargetDependency */,
 			);
-			name = "chip-8 watchOS App";
+			name = "chip-8-old watchOS App";
 			productName = "chip-8 watchOS App";
-			productReference = 601EE83A244C73E9005C0456 /* chip-8.app */;
+			productReference = 601EE83A244C73E9005C0456 /* chip-8-old.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		601EE846244C73E9005C0456 /* chip-8 watchOS App Extension */ = {
+		601EE846244C73E9005C0456 /* chip-8-old watchOS App Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 601EE881244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App Extension" */;
+			buildConfigurationList = 601EE881244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old watchOS App Extension" */;
 			buildPhases = (
 				601EE843244C73E9005C0456 /* Sources */,
 				601EE844244C73E9005C0456 /* Frameworks */,
@@ -436,14 +436,14 @@
 			);
 			dependencies = (
 			);
-			name = "chip-8 watchOS App Extension";
+			name = "chip-8-old watchOS App Extension";
 			productName = "chip-8 watchOS App Extension";
-			productReference = 601EE847244C73E9005C0456 /* chip-8 Extension.appex */;
+			productReference = 601EE847244C73E9005C0456 /* chip-8-old Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		601EE854244C73E9005C0456 /* chip-8 tvOS */ = {
+		601EE854244C73E9005C0456 /* chip-8-old tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 601EE88C244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 tvOS" */;
+			buildConfigurationList = 601EE88C244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old tvOS" */;
 			buildPhases = (
 				601EE851244C73E9005C0456 /* Sources */,
 				601EE852244C73E9005C0456 /* Frameworks */,
@@ -453,14 +453,14 @@
 			);
 			dependencies = (
 			);
-			name = "chip-8 tvOS";
+			name = "chip-8-old tvOS";
 			productName = "chip-8 tvOS";
-			productReference = 601EE855244C73E9005C0456 /* chip-8.app */;
+			productReference = 601EE855244C73E9005C0456 /* chip-8-old.app */;
 			productType = "com.apple.product-type.application";
 		};
-		601EE865244C73E9005C0456 /* chip-8 macOS */ = {
+		601EE865244C73E9005C0456 /* chip-8-old macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 601EE88F244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 macOS" */;
+			buildConfigurationList = 601EE88F244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old macOS" */;
 			buildPhases = (
 				601EE862244C73E9005C0456 /* Sources */,
 				601EE863244C73E9005C0456 /* Frameworks */,
@@ -470,9 +470,9 @@
 			);
 			dependencies = (
 			);
-			name = "chip-8 macOS";
+			name = "chip-8-old macOS";
 			productName = "chip-8 macOS";
-			productReference = 601EE866244C73E9005C0456 /* chip-8.app */;
+			productReference = 601EE866244C73E9005C0456 /* chip-8-old.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -502,7 +502,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 601EE820244C73E7005C0456 /* Build configuration list for PBXProject "chip-8" */;
+			buildConfigurationList = 601EE820244C73E7005C0456 /* Build configuration list for PBXProject "chip-8-old" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -515,11 +515,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				601EE829244C73E9005C0456 /* chip-8 iOS */,
-				601EE839244C73E9005C0456 /* chip-8 watchOS App */,
-				601EE846244C73E9005C0456 /* chip-8 watchOS App Extension */,
-				601EE854244C73E9005C0456 /* chip-8 tvOS */,
-				601EE865244C73E9005C0456 /* chip-8 macOS */,
+				601EE829244C73E9005C0456 /* chip-8-old iOS */,
+				601EE839244C73E9005C0456 /* chip-8-old watchOS App */,
+				601EE846244C73E9005C0456 /* chip-8-old watchOS App Extension */,
+				601EE854244C73E9005C0456 /* chip-8-old tvOS */,
+				601EE865244C73E9005C0456 /* chip-8-old macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -719,12 +719,12 @@
 /* Begin PBXTargetDependency section */
 		601EE83D244C73E9005C0456 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 601EE839244C73E9005C0456 /* chip-8 watchOS App */;
+			target = 601EE839244C73E9005C0456 /* chip-8-old watchOS App */;
 			targetProxy = 601EE83C244C73E9005C0456 /* PBXContainerItemProxy */;
 		};
 		601EE84A244C73E9005C0456 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 601EE846244C73E9005C0456 /* chip-8 watchOS App Extension */;
+			target = 601EE846244C73E9005C0456 /* chip-8-old watchOS App Extension */;
 			targetProxy = 601EE849244C73E9005C0456 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -902,7 +902,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "chip-8 Extension";
+				PRODUCT_NAME = "chip-8-old Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -923,7 +923,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "chip-8 Extension";
+				PRODUCT_NAME = "chip-8-old Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -943,7 +943,7 @@
 				IBSC_MODULE = chip_8_Extension;
 				INFOPLIST_FILE = "chip-8 watchOS App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -962,7 +962,7 @@
 				IBSC_MODULE = chip_8_Extension;
 				INFOPLIST_FILE = "chip-8 watchOS App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8.watchkitapp";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -985,7 +985,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1005,7 +1005,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1025,7 +1025,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1045,7 +1045,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1069,7 +1069,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1090,7 +1090,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kamaal.chip-8";
-				PRODUCT_NAME = "chip-8";
+				PRODUCT_NAME = "chip-8-old";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1099,7 +1099,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		601EE820244C73E7005C0456 /* Build configuration list for PBXProject "chip-8" */ = {
+		601EE820244C73E7005C0456 /* Build configuration list for PBXProject "chip-8-old" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				601EE87F244C73E9005C0456 /* Debug */,
@@ -1108,7 +1108,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		601EE881244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App Extension" */ = {
+		601EE881244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old watchOS App Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				601EE882244C73E9005C0456 /* Debug */,
@@ -1117,7 +1117,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		601EE885244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 watchOS App" */ = {
+		601EE885244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old watchOS App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				601EE886244C73E9005C0456 /* Debug */,
@@ -1126,7 +1126,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		601EE889244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 iOS" */ = {
+		601EE889244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				601EE88A244C73E9005C0456 /* Debug */,
@@ -1135,7 +1135,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		601EE88C244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 tvOS" */ = {
+		601EE88C244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				601EE88D244C73E9005C0456 /* Debug */,
@@ -1144,7 +1144,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		601EE88F244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8 macOS" */ = {
+		601EE88F244C73E9005C0456 /* Build configuration list for PBXNativeTarget "chip-8-old macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				601EE890244C73E9005C0456 /* Debug */,
