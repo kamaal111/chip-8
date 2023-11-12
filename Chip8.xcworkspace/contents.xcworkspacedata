@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/kamaal/Projects/Swift/Apps/chip-8/Chip8Old/chip-8-old.xcodeproj">
+      location = "group:Chip8Old/chip-8-old.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Chip8/Chip8.xcodeproj">

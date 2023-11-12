@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C09AC8A2AFFDE770057533A /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C09AC892AFFDE770057533A /* Chip8CPU.swift */; };
+		2C09AC8B2AFFDE770057533A /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C09AC892AFFDE770057533A /* Chip8CPU.swift */; };
+		2C09AC8C2AFFDE770057533A /* Chip8CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C09AC892AFFDE770057533A /* Chip8CPU.swift */; };
 		2CE1F39C299439B3009338D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F39B299439B3009338D4 /* AppDelegate.swift */; };
 		2CE1F39E299439B3009338D4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F39D299439B3009338D4 /* GameViewController.swift */; };
 		2CE1F3A1299439B3009338D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1F39F299439B3009338D4 /* Main.storyboard */; };
@@ -30,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C09AC892AFFDE770057533A /* Chip8CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip8CPU.swift; sourceTree = "<group>"; };
 		2CE1F391299439B0009338D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		2CE1F392299439B0009338D4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2CE1F393299439B3009338D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE1F391299439B0009338D4 /* GameScene.sks */,
+				2C09AC892AFFDE770057533A /* Chip8CPU.swift */,
 				2CE1F392299439B0009338D4 /* GameScene.swift */,
 				2CE1F393299439B3009338D4 /* Assets.xcassets */,
 			);
@@ -275,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE1F3C9299439B4009338D4 /* GameScene.swift in Sources */,
+				2C09AC8A2AFFDE770057533A /* Chip8CPU.swift in Sources */,
 				2CE1F39E299439B3009338D4 /* GameViewController.swift in Sources */,
 				2CE1F39C299439B3009338D4 /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE1F3CA299439B4009338D4 /* GameScene.swift in Sources */,
+				2C09AC8B2AFFDE770057533A /* Chip8CPU.swift in Sources */,
 				2CE1F3AE299439B3009338D4 /* GameViewController.swift in Sources */,
 				2CE1F3AC299439B3009338D4 /* AppDelegate.swift in Sources */,
 			);
@@ -295,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE1F3CB299439B4009338D4 /* GameScene.swift in Sources */,
+				2C09AC8C2AFFDE770057533A /* Chip8CPU.swift in Sources */,
 				2CE1F3BE299439B4009338D4 /* GameViewController.swift in Sources */,
 				2CE1F3BC299439B4009338D4 /* AppDelegate.swift in Sources */,
 			);
